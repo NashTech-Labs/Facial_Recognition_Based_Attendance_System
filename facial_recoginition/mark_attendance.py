@@ -84,4 +84,4 @@ record_df = pd.DataFrame(attendance_record)
 record_df.drop_duplicates(["Date"],
                           keep="first",
                           inplace=True)
-record_df.to_csv(attendance_database / f'Attendance_Record_{time.date()}', index=False)
+record_df.to_csv(attendance_database / f'Attendance_Record_{time.date()}.csv', index=False)
